@@ -33,6 +33,7 @@ public class PlayerController : Singleton<PlayerController>
 		{
 			_isGrounded = false;
 			rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+			SoundManager.Instance.PlaySound(0);
 		}
 
 	}
